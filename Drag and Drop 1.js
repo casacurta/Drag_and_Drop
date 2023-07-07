@@ -11,3 +11,7 @@ function drop(event) {
     image.height = 31;
     event.target.appendChild(image);
 }
+
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
+}
